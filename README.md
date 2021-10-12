@@ -15,14 +15,14 @@ and more...
 1. Install the config:
 ```bash
 # Yarn
-yarn add --dev @jason-chang/eslint-config
+yarn add --dev @lemonbot.fun/eslint-config-base
 # NPM
-npm install --save-dev @jason-chang/eslint-config
+npm install --save-dev @lemonbot.fun/eslint-config-base
 ```
 2. Extend the config
 ```jsonc
 // .eslintrc.json
 {
-  "extends": "@jason-chang/eslint-config"
+  "extends": "@lemonbot.fun/eslint-config-base"
 }
 ```
