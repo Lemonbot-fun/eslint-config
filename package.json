@@ -1,6 +1,6 @@
 {
   "name": "eslint-config",
-  "private": false,
+  "private": true,
   "scripts": {
     "test": "jest",
     "lint": "eslint packages/**/*.js packages/**/*.json"
@@ -9,7 +9,6 @@
     "packages/*"
   ],
   "devDependencies": {
-    "eslint-config-airbnb-base": "^14.2.1",
     "lerna": "^3.22.1"
   },
   "dependencies": {},

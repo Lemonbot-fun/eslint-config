@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-react",
-  "version": "1.0.1",
+  "name": "@lemonbot.fun/eslint-config-react",
+  "version": "0.1.0",
   "description": "The eslint config for personal",
   "main": "index.js",
   "repository": "https://gitlab.lemonbot.fun/jason-chang/eslint-config",
@@ -22,6 +22,7 @@
   "peerDependencies": {
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^12.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-webpack": "^0.12.2",
