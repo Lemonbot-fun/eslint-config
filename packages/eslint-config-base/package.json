@@ -25,7 +25,6 @@
     "eslint-plugin-compat": "^3.7.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jest": "^23.13.2",
-    "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
@@ -42,7 +41,6 @@
     "eslint-plugin-compat": "^3.8.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^23.20.0",
-    "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.21.5",
@@ -62,6 +60,6 @@
       "bliss"
     ]
   },
-  "gitHead": "faaf88acac5ac5bf693e4dab019723c7ddeffc5e",
+  "gitHead": "b8d74cc34eea8f3c6f546f35cfe42eda09fe45e1",
   "private": false
 }
