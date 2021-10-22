@@ -17,14 +17,14 @@
     "test": "jest"
   },
   "dependencies": {
-    "babel-eslint": "^10.1.0"
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "eslint-config-prettier": "^6.15.0"
   },
   "peerDependencies": {
     "eslint": "^7.2.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-airbnb-typescript": "^12.0",
-    "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-webpack": "^0.12.2",
     "eslint-plugin-compat": "^3.7.0",
     "eslint-plugin-import": "^2.21.2",
@@ -42,10 +42,6 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "eslint": "^7.12.1",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-airbnb-typescript": "^12.0",
-    "eslint-config-prettier": "^6.15.0",
     "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-plugin-compat": "^3.8.0",
     "eslint-plugin-import": "^2.22.1",
@@ -73,5 +69,5 @@
   "publishConfig": {
     "registry": "https://www.npmjs.com"
   },
-  "gitHead": "4d070a8e953bb9d73ac50fbaa303ea351e3e0910"
+  "gitHead": "faaf88acac5ac5bf693e4dab019723c7ddeffc5e"
 }
