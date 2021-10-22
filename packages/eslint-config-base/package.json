@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.1",
     "eslint-config-prettier": "^6.15.0"
@@ -60,6 +59,6 @@
       "bliss"
     ]
   },
-  "gitHead": "b8d74cc34eea8f3c6f546f35cfe42eda09fe45e1",
+  "gitHead": "11d996d6f625528bb6b0ee933dcf5e13ddd1cf59",
   "private": false
 }
