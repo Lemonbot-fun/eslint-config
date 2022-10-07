@@ -1,6 +1,6 @@
 {
   "name": "@lemonbot.fun/eslint-config-base",
-  "version": "1.9.4",
+  "version": "2.0.4",
   "description": "The eslint config for personal",
   "main": "index.js",
   "repository": "https://github.com/lemonbot-fun/eslint-config.git",
@@ -13,8 +13,7 @@
   "license": "MIT",
   "scripts": {
     "test": "node ./tests/test.js",
-    "update-snap": "node ./tests/snapshot.js",
-    "publish": "node ../../scripts/publish.js"
+    "update-snap": "node ./tests/snapshot.js"
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^15.0.0",

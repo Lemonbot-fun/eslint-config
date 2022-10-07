@@ -2,8 +2,7 @@
   "name": "eslint-config",
   "private": true,
   "scripts": {
-    "publish": "node scripts/publish.js",
-    "version": "node scripts/version.js",
+    "publish": "pnpm run test && node scripts/publish.js",
     "test": "BROWSERSLIST_IGNORE_OLD_DATA=\"1\" pnpm run -r test",
     "update-snap": "BROWSERSLIST_IGNORE_OLD_DATA=\"1\" pnpm run -r update-snap"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@lemonbot.fun/eslint-config-vue",
-  "version": "1.9.4",
+  "version": "2.0.2",
   "description": "The eslint config for personal",
   "main": "index.js",
   "repository": "https://github.com/lemonbot-fun/eslint-config.git",
@@ -17,8 +17,7 @@
   "license": "MIT",
   "scripts": {
     "test": "node ./tests/test.js",
-    "update-snap": "node ./tests/snapshot.js",
-    "publish": "node ../../scripts/publish.js"
+    "update-snap": "node ./tests/snapshot.js"
   },
   "dependencies": {
     "@lemonbot.fun/eslint-config-base": "workspace:*",
