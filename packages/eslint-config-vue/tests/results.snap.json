@@ -1,0 +1,125 @@
+[
+  {
+    "filePath": "",
+    "messages": [
+      {
+        "ruleId": "vue/html-self-closing",
+        "severity": 1,
+        "message": "Require self-closing on HTML elements (<div>).",
+        "line": 2,
+        "column": 3,
+        "nodeType": "VElement",
+        "endLine": 2,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            37,
+            44
+          ],
+          "text": "/>"
+        }
+      },
+      {
+        "ruleId": "vue/attributes-order",
+        "severity": 2,
+        "message": "Attribute \"ref\" should go before \"size\".",
+        "line": 2,
+        "column": 17,
+        "nodeType": "VAttribute",
+        "endLine": 2,
+        "endColumn": 27,
+        "fix": {
+          "range": [
+            18,
+            37
+          ],
+          "text": "ref=\"root\" size=\"1\""
+        }
+      },
+      {
+        "ruleId": "vue/multi-word-component-names",
+        "severity": 2,
+        "message": "Component name \"Bad\" should always be multi-word.",
+        "line": 9,
+        "column": 9,
+        "nodeType": "Literal",
+        "messageId": "unexpected",
+        "endLine": 9,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "@typescript-eslint/quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 11,
+        "column": 17,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 11,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            193,
+            199
+          ],
+          "text": "'adsf'"
+        }
+      },
+      {
+        "ruleId": "unused-imports/no-unused-vars",
+        "severity": 2,
+        "message": "'bar' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+        "line": 13,
+        "column": 11,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 13,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "@typescript-eslint/quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 13,
+        "column": 17,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 13,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            239,
+            245
+          ],
+          "text": "'adsf'"
+        }
+      },
+      {
+        "ruleId": "@typescript-eslint/comma-dangle",
+        "severity": 2,
+        "message": "Missing trailing comma.",
+        "line": 14,
+        "column": 4,
+        "nodeType": "Property",
+        "messageId": "missing",
+        "endLine": 15,
+        "endColumn": 1,
+        "fix": {
+          "range": [
+            249,
+            252
+          ],
+          "text": "},\n}"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 6,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 4,
+    "fixableWarningCount": 1,
+    "source": "<template>\n  <div size=\"1\" ref=\"root\"></div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue';\n\nexport default defineComponent({\n  name: 'Bad',\n  setup() {\n    const foo = \"adsf\";\n    console.log(foo);\n    const bar = \"adsf\";\n  }\n});\n</script>\n",
+    "usedDeprecatedRules": []
+  }
+]

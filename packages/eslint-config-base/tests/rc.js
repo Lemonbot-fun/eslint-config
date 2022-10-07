@@ -1,13 +1,12 @@
-
 module.exports = {
-  root: true,
   env: {
     node: true,
   },
-  extends: [require.resolve('./packages/eslint-config-base/index')],
+  extends: [require.resolve('../index')],
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
-    project: './tsconfig.eslint.json',
+    project: './tsconfig.json',
+    tsconfigRootDir: __dirname,
   },
 };

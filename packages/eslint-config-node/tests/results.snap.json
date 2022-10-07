@@ -1,0 +1,62 @@
+[
+  {
+    "filePath": "",
+    "messages": [
+      {
+        "ruleId": "@typescript-eslint/quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 1,
+        "column": 13,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 1,
+        "endColumn": 19,
+        "fix": {
+          "range": [
+            12,
+            18
+          ],
+          "text": "'adsf'"
+        }
+      },
+      {
+        "ruleId": "unused-imports/no-unused-vars",
+        "severity": 2,
+        "message": "'bar' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+        "line": 3,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "@typescript-eslint/quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 3,
+        "column": 13,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 3,
+        "endColumn": 19,
+        "fix": {
+          "range": [
+            50,
+            56
+          ],
+          "text": "'adsf'"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 3,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 2,
+    "fixableWarningCount": 0,
+    "source": "const foo = \"adsf\";\nconsole.log(foo);\nconst bar = \"adsf\";\n",
+    "usedDeprecatedRules": []
+  }
+]

@@ -1,33 +1,29 @@
 module.exports = {
   extends: [
-    "airbnb-typescript",
-    "plugin:react/recommended",
-    "plugin:import/typescript",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:jest/recommended",
-    "plugin:promise/recommended",
-    "plugin:compat/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended",
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    '@lemonbot.fun/eslint-config-base', //
   ],
   env: {
     browser: true,
     node: true,
   },
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    'react', //
+    'react-hooks',
+  ],
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  rules: {
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-var-requires": "off",
-    "no-param-reassign": ["error", { props: false }],
-  },
+  rules: {},
   settings: {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    react: {
+      version: 'detect',
     },
   },
 };
