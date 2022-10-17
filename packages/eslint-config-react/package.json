@@ -1,6 +1,6 @@
 {
   "name": "@lemonbot.fun/eslint-config-react",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "The eslint config for personal",
   "main": "index.js",
   "repository": "https://github.com/lemonbot-fun/eslint-config.git",
