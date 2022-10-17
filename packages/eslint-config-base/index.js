@@ -100,7 +100,7 @@ module.exports = {
     // 开启 'compat/compat' 校验
     // Turn on 'compat/compat'
     // https://eslint.org/docs/rules/array-bracket-spacing
-    "compat/compat": "error",
+    'compat/compat': 'error',
 
     // 设置 'array-bracket-spacing' 校验
     // Turn on 'array-bracket-spacing'
@@ -230,6 +230,11 @@ module.exports = {
     // https://eslint.org/docs/rules/no-plusplus
     'object-curly-newline': 0,
 
+    // 启用 'one-var' 校验，要求每个 let/const/var 关键字只能定义一个变量.
+    // Turn on 'one-var'
+    // https://eslint.org/docs/rules/one-var
+    'one-var': ['error', 'never'],
+
     // 开启 'object-shorthand' 校验，
     // Turn on 'object-shorthand'
     // https://eslint.org/docs/rules/object-shorthand
@@ -269,7 +274,7 @@ module.exports = {
     },
     'import/resolver': {
       typescript: true,
-      node: {'extensions': allExtensions},
+      node: { extensions: allExtensions },
     },
     'import/extensions': allExtensions,
     'import/external-module-folders': ['node_modules', 'node_modules/@types'],
