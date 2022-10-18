@@ -44,6 +44,20 @@ module.exports = {
     'keyword-spacing': 0,
     '@typescript-eslint/keyword-spacing': ['error', { before: true, after: true }],
 
+    // 开启 '@typescript-eslint/member-delimiter-style' 警告
+    // Turn on '@typescript-eslint/member-delimiter-style' warning
+    // https://typescript-eslint.io/rules/member-delimiter-style
+    '@typescript-eslint/member-delimiter-style': ['warn', {
+      multiline: {
+        delimiter: 'semi',
+        requireLast: true,
+      },
+      singleline: {
+        delimiter: 'comma',
+        requireLast: false,
+      },
+    }],
+
     // 开启 '@typescript-eslint/object-curly-spacing' 校验
     // Turn on '@typescript-eslint/object-curly-spacing'
     // https://typescript-eslint.io/rules/keyword-spacing
@@ -80,6 +94,7 @@ module.exports = {
     // Turn off '@typescript-eslint/no-unused-expressions'
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unused-expressions.md
     '@typescript-eslint/no-unused-expressions': 0,
+
 
     // 开启 '@typescript-eslint/no-use-before-define' 校验
     // Turn on '@typescript-eslint/no-use-before-define'
