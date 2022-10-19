@@ -222,18 +222,20 @@ module.exports = {
     // https://eslint.org/docs/rules/no-nested-ternary
     'no-nested-ternary': 0,
 
+    // 设置 'no-param-reassign' 校验, 禁止 prop 覆盖
+    // Turn on 'no-param-reassign'
+    // https://eslint.org/docs/rules/no-param-reassign
+    'no-param-reassign': ['error', { props: true }],
+
     // 禁止 "with" 操作符，匿名 function ，允许 "in" 操作符。
     // Block WithStatement FunctionExpression, Enable BinaryExpression[operator='in']
     // https://eslint.org/docs/rules/no-restricted-syntax
     'no-restricted-syntax': ['error', 'WithStatement', 'BinaryExpression[operator="in"]'],
 
-    // @todo
-    'no-trailing-spaces': 0,
-
-    // 开启 'no-param-reassign' 校验
-    // Turn on 'no-param-reassign'
-    // https://eslint.org/docs/rules/no-param-reassign
-    'no-param-reassign': ['error'],
+    // 禁止 行尾部多余的空格
+    // Block trailing spaces
+    // https://eslint.org/docs/rules/no-trailing-spaces
+    'no-trailing-spaces': ['error'],
 
     // 禁用 'no-plusplus' 校验 允许使用 ++ -- 操作符
     // Turn off 'no-plusplus'
