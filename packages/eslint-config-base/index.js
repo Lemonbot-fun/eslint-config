@@ -2,8 +2,9 @@ const allExtensions = ['.ts', '.tsx', '.js', '.jsx'];
 
 module.exports = {
   extends: [
-    'plugin:@typescript-eslint/recommended',
     'airbnb-typescript/base',
+    'plugin:unicorn/recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
   env: {
     browser: true,
@@ -18,18 +19,24 @@ module.exports = {
   plugins: [
     'compat',
     'import', //
+    'unicorn',
     'unused-imports',
     '@typescript-eslint/eslint-plugin',
   ],
   rules: {
+    // 启用 '@typescript-eslint/consistent-type-imports' 校验
+    // Turn off '@typescript-eslint/consistent-type-imports'
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-imports.md
+    '@typescript-eslint/consistent-type-imports': ['error'],
+
     // 禁用 '@typescript-eslint/explicit-function-return-type' 校验
     // Turn off '@typescript-eslint/explicit-function-return-type'
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
     '@typescript-eslint/explicit-function-return-type': 0,
 
     // 禁用 '@typescript-eslint/explicit-module-boundary-types' 校验
     // Turn off '@typescript-eslint/explicit-module-boundary-types'
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
     '@typescript-eslint/explicit-module-boundary-types': 0,
 
     // 开启 '@typescript-eslint/func-call-spacing' 校验
@@ -77,17 +84,17 @@ module.exports = {
 
     // 禁用 '@typescript-eslint/no-var-requires' 校验
     // Turn off '@typescript-eslint/no-var-requires'
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-var-requires.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-var-requires.md
     '@typescript-eslint/no-var-requires': 0,
 
     // 禁用 '@typescript-eslint/no-explicit-any' 校验
     // Turn off '@typescript-eslint/no-explicit-any'
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-explicit-any.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-explicit-any.md
     '@typescript-eslint/no-explicit-any': 0,
 
     // 禁用 '@typescript-eslint/no-non-null-assertion' 校验
     // Turn off '@typescript-eslint/no-non-null-assertion'
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
     '@typescript-eslint/no-non-null-assertion': 0,
 
     // 禁用 '@typescript-eslint/no-unused-expressions' 校验
@@ -227,10 +234,10 @@ module.exports = {
     // https://eslint.org/docs/rules/no-param-reassign
     'no-param-reassign': ['error', { props: true }],
 
-    // 禁止 "with" 操作符，匿名 function ，允许 "in" 操作符。
-    // Block WithStatement FunctionExpression, Enable BinaryExpression[operator='in']
+    // 禁止 "no-restricted-syntax" 校验
+    // Turn off 'no-restricted-syntax'
     // https://eslint.org/docs/rules/no-restricted-syntax
-    'no-restricted-syntax': ['error', 'WithStatement', 'BinaryExpression[operator="in"]'],
+    'no-restricted-syntax': 0,
 
     // 禁止 行尾部多余的空格
     // Block trailing spaces
@@ -296,4 +303,15 @@ module.exports = {
     'import/extensions': allExtensions,
     'import/external-module-folders': ['node_modules', 'node_modules/@types'],
   },
+  overrides: [
+    {
+      files: ['*.js', '*.jsx'],
+      rules: {
+        // 在 js 文件中关闭 'unicorn:prefer-module' 校验
+        // Turn of 'unicorn:prefer-module' verify in '*.js' files
+        // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-module.md
+        'unicorn/prefer-module': 0,
+      },
+    },
+  ],
 };

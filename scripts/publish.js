@@ -14,12 +14,11 @@ if (process.platform === 'win32') {
 }
 
 const releaseTypeList = ['major', 'premajor', 'minor', 'preminor', 'patch', 'prepatch'];
-
 const mapedPkgInfoList = new Map(); // 按包名建立信息索引，方便快速访问
 const sortedPkgInfoList = []; // 排序根据依赖层级排序的，包列表，最终的处理队列
 
 // read & sort pkg info
-(() => {
+function settlePkgInfo() {
   const dirs = readdirSync(pkgsDir);
   const queuePkgInfoList = [];
   dirs.forEach(p => {
@@ -59,7 +58,7 @@ const sortedPkgInfoList = []; // 排序根据依赖层级排序的，包列表�
       sortedPkgInfoList.push(cur);
     }
   }
-})();
+}
 
 let pIndex = 0;
 async function progressItem() {
@@ -167,6 +166,8 @@ async function applyVersionAndPublish() {
 }
 
 (async () => {
+  settlePkgInfo();
+
   await progressItem();
 
   pIndex = 0;
