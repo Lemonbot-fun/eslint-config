@@ -1,6 +1,6 @@
 {
   "name": "@lemonbot.fun/eslint-config-vue",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "The eslint config for personal",
   "main": "index.js",
   "repository": "https://github.com/lemonbot-fun/eslint-config.git",

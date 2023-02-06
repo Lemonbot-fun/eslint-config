@@ -24,6 +24,12 @@ module.exports = {
     '@typescript-eslint/eslint-plugin',
   ],
   rules: {
+    // 设置 '@typescript-eslint/comma-dangle' 校验
+    // Turn on '@typescript-eslint/comma-dangle' rule
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/comma-dangle.md
+    'comma-dangle': 0,
+    '@typescript-eslint/comma-dangle': ['warn', 'always-multiline'],
+
     // 启用 '@typescript-eslint/consistent-type-imports' 校验
     // Turn off '@typescript-eslint/consistent-type-imports'
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-imports.md
@@ -118,6 +124,11 @@ module.exports = {
     // Turn off '@typescript-eslint/return-await'
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/return-await.md
     '@typescript-eslint/return-await': 0,
+
+    // 开启 'block-spacing' 校验
+    // Turn on 'block-spacing'
+    // https://eslint.org/docs/rules/block-spacing
+    'block-spacing': ['warn', 'always'],
 
     // 开启 'compat/compat' 校验
     // Turn on 'compat/compat'
@@ -283,6 +294,54 @@ module.exports = {
     // Turn on 'quote-props'
     // https://eslint.org/docs/rules/quote-props
     'quote-props': ['error', 'as-needed'],
+
+    // 设置 'quote-props' 校验
+    // Turn on 'quote-props'
+    // https://eslint.org/docs/rules/quote-props
+    'space-in-parens': ['error', 'never'],
+
+    // 开启 'unicorn/better-regex' 校验
+    // Turn 'unicorn/better-regex' rule on
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-regex.md
+    'unicorn/better-regex': 'error',
+
+    // 开启 'unicorn/error-message' 校验
+    // Turn 'unicorn/error-message' rule on
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/error-message.md
+    'unicorn/error-message': 'error',
+
+    // 开启 'unicorn/escape-case' 校验
+    // Turn 'unicorn/escape-case' rule on
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/escape-case.md
+    'unicorn/escape-case': 'error',
+
+    // 关闭 'unicorn/prefer-top-level-await' 校验
+    // Turn off 'unicorn/prefer-top-level-await'
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
+    'unicorn/filename-case': ['error', { cases: { camelCase: true, pascalCase: true } }],
+
+    // 关闭 'unicorn/no-null' 校验
+    // Turn off 'unicorn/no-null'
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
+    'unicorn/no-null': 0,
+
+    // 关闭 'unicorn/prefer-top-level-await' 校验
+    // Turn off 'unicorn/prefer-top-level-await'
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
+    'unicorn/prefer-top-level-await': 0,
+
+    'unicorn/consistent-destructuring': 0,
+    'unicorn/consistent-function-scoping': 0,
+    'unicorn/explicit-length-check': 0,
+    'unicorn/prefer-top-level-await': 0,
+    'unicorn/no-abusive-eslint-disable': 0,
+    'unicorn/no-array-callback-reference': 0,
+    'unicorn/no-array-for-each': 0,
+    'unicorn/no-array-reduce': 0,
+    'unicorn/no-nested-ternary': 0,
+    'unicorn/no-null': 0,
+    'unicorn/prefer-spread': 0,
+    'unicorn/prevent-abbreviations': 0,
 
     // 设置 'no-unused-vars' 校验
     // Turn on 'no-unused-vars'

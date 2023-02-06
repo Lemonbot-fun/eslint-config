@@ -19,7 +19,9 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     },
     "lib": [
       "esnext",
@@ -28,9 +30,7 @@
       "scripthost"
     ]
   },
-  "include": [
-    "src/**/*.ts"
-  ],
+  "include": [],
   "exclude": [
     "node_modules"
   ]

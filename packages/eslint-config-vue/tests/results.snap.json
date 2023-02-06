@@ -96,7 +96,7 @@
       },
       {
         "ruleId": "@typescript-eslint/comma-dangle",
-        "severity": 2,
+        "severity": 1,
         "message": "Missing trailing comma.",
         "line": 14,
         "column": 4,
@@ -114,11 +114,11 @@
       }
     ],
     "suppressedMessages": [],
-    "errorCount": 6,
+    "errorCount": 5,
     "fatalErrorCount": 0,
-    "warningCount": 1,
-    "fixableErrorCount": 4,
-    "fixableWarningCount": 1,
+    "warningCount": 2,
+    "fixableErrorCount": 3,
+    "fixableWarningCount": 2,
     "source": "<template>\n  <div size=\"1\" ref=\"root\"></div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue';\n\nexport default defineComponent({\n  name: 'Bad',\n  setup() {\n    const foo = \"adsf\";\n    console.log(foo);\n    const bar = \"adsf\";\n  }\n});\n</script>\n",
     "usedDeprecatedRules": []
   }
