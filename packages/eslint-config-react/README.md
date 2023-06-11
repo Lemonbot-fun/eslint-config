@@ -7,25 +7,28 @@ Enhances Airbnb's ESLint config with TypeScript support
 ### 1) Install dependencies (and peer dependencies)
 
 ```bash
-npm i @lemonbot.fun/eslint-config-react \
-            @typescript-eslint/eslint-plugin@^5.0.0 \
-            @typescript-eslint/parser@^5.0.0 \
-            typescript \
-            -D
+npm i eslint \
+      @lemonbot.fun/eslint-config-react \
+      @typescript-eslint/eslint-plugin@^5.0.0 \
+      @typescript-eslint/parser@^5.0.0 \
+      typescript \
+      -D
             
 # eg: pnpm
-pnpm add @lemonbot.fun/eslint-config-react \
-            @typescript-eslint/eslint-plugin@^5.0.0 \
-            @typescript-eslint/parser@^5.0.0 \
-            typescript \
-            -D
+pnpm add eslint \
+        @lemonbot.fun/eslint-config-react \
+        @typescript-eslint/eslint-plugin@^5.0.0 \
+        @typescript-eslint/parser@^5.0.0 \
+        typescript \
+        -D
 
 #eg: yarn
-yarn add @lemonbot.fun/eslint-config-react \
-            @typescript-eslint/eslint-plugin@^5.0.0 \
-            @typescript-eslint/parser@^5.0.0 \
-            typescript \
-            --dev
+yarn add eslint \
+        @lemonbot.fun/eslint-config-react \
+        @typescript-eslint/eslint-plugin@^5.0.0 \
+        @typescript-eslint/parser@^5.0.0 \
+        typescript \
+        --dev
 ```
 
 ### 2) Configure ESLint
