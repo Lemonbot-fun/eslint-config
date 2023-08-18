@@ -9,6 +9,7 @@
         "line": 2,
         "column": 3,
         "nodeType": "VElement",
+        "messageId": "requireSelfClosing",
         "endLine": 2,
         "endColumn": 34,
         "fix": {
@@ -26,6 +27,7 @@
         "line": 2,
         "column": 17,
         "nodeType": "VAttribute",
+        "messageId": "expectedOrder",
         "endLine": 2,
         "endColumn": 27,
         "fix": {
@@ -35,6 +37,16 @@
           ],
           "text": "ref=\"root\" size=\"1\""
         }
+      },
+      {
+        "ruleId": "import/no-unresolved",
+        "severity": 2,
+        "message": "Unable to resolve path to module 'vue'.",
+        "line": 6,
+        "column": 33,
+        "nodeType": "Literal",
+        "endLine": 6,
+        "endColumn": 38
       },
       {
         "ruleId": "vue/multi-word-component-names",
@@ -114,12 +126,19 @@
       }
     ],
     "suppressedMessages": [],
-    "errorCount": 5,
+    "errorCount": 6,
     "fatalErrorCount": 0,
     "warningCount": 2,
     "fixableErrorCount": 3,
     "fixableWarningCount": 2,
     "source": "<template>\n  <div size=\"1\" ref=\"root\"></div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue';\n\nexport default defineComponent({\n  name: 'Bad',\n  setup() {\n    const foo = \"adsf\";\n    console.log(foo);\n    const bar = \"adsf\";\n  }\n});\n</script>\n",
-    "usedDeprecatedRules": []
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "vue/component-tags-order",
+        "replacedBy": [
+          "block-order"
+        ]
+      }
+    ]
   }
 ]
