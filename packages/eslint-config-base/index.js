@@ -330,6 +330,11 @@ module.exports = {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
     'unicorn/prefer-top-level-await': 0,
 
+    // 关闭 'unicorn/expiring-todo-comments' 校验
+    // Turn off 'unicorn/expiring-todo-comments'
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
+    'unicorn/expiring-todo-comments': 0,
+
     'unicorn/consistent-destructuring': 0,
     'unicorn/consistent-function-scoping': 0,
     'unicorn/explicit-length-check': 0,
