@@ -325,15 +325,15 @@ module.exports = {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
     'unicorn/no-null': 0,
 
-    // 关闭 'unicorn/prefer-top-level-await' 校验
-    // Turn off 'unicorn/prefer-top-level-await'
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
-    'unicorn/prefer-top-level-await': 0,
-
     // 关闭 'unicorn/expiring-todo-comments' 校验
     // Turn off 'unicorn/expiring-todo-comments'
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
     'unicorn/expiring-todo-comments': 0,
+
+    // 关闭 'unicorn/prefer-top-level-await' 校验
+    // Turn off 'unicorn/prefer-top-level-await'
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
+    'unicorn/prefer-top-level-await': 0,
 
     'unicorn/consistent-destructuring': 0,
     'unicorn/consistent-function-scoping': 0,
@@ -361,7 +361,10 @@ module.exports = {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
-      typescript: true,
+      typescript: {
+        alwaysTryTypes: true,
+        project: './tsconfig.json',
+      },
       node: { extensions: allExtensions },
     },
     'import/extensions': allExtensions,
