@@ -320,6 +320,11 @@ module.exports = {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
     'unicorn/filename-case': ['error', { cases: { camelCase: true, pascalCase: true } }],
 
+    // 关闭 'unicorn/no-document-cookie' 校验
+    // Turn off 'unicorn/no-document-cookie'
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-document-cookie.md
+    'unicorn/no-document-cookie': 0,
+
     // 关闭 'unicorn/no-null' 校验
     // Turn off 'unicorn/no-null'
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
@@ -344,7 +349,6 @@ module.exports = {
     'unicorn/no-array-for-each': 0,
     'unicorn/no-array-reduce': 0,
     'unicorn/no-nested-ternary': 0,
-    'unicorn/no-null': 0,
     'unicorn/prefer-spread': 0,
     'unicorn/prevent-abbreviations': 0,
 
