@@ -40,6 +40,11 @@ module.exports = {
     // https://eslint.vuejs.org/rules/attributes-order.html
     'vue/attributes-order': ['error'],
 
+    // 开启 'vue/block-order' 校验
+    // Turn on 'vue/block-order'
+    // https://eslint.vuejs.org/rules/block-order.html
+    'vue/block-order': ['error', { order: ['template', 'i18n', 'script:not([setup])', 'script[setup]', 'style[scoped]', 'style:not([scoped])'] }],
+
     // 禁用 'vue/no-v-html' 校验
     // Turn off 'vue/no-v-html'
     // https://eslint.vuejs.org/rules/no-v-html.html

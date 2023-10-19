@@ -325,6 +325,11 @@ module.exports = {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-document-cookie.md
     'unicorn/no-document-cookie': 0,
 
+    // 关闭 'unicorn/no-document-cookie' 校验
+    // Turn off 'unicorn/no-empty-file'
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-empty-file.md
+    'unicorn/no-empty-file': 0,
+
     // 关闭 'unicorn/no-null' 校验
     // Turn off 'unicorn/no-null'
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
