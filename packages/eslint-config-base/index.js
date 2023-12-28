@@ -25,40 +25,40 @@ module.exports = {
   ],
   rules: {
     // 设置 '@typescript-eslint/comma-dangle' 校验
-    // Turn on '@typescript-eslint/comma-dangle' rule
+    // Turn '@typescript-eslint/comma-dangle' on
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/comma-dangle.md
     'comma-dangle': 0,
     '@typescript-eslint/comma-dangle': ['warn', 'always-multiline'],
 
     // 启用 '@typescript-eslint/consistent-type-imports' 校验
-    // Turn off '@typescript-eslint/consistent-type-imports'
+    // Turn '@typescript-eslint/consistent-type-imports' off
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-imports.md
     '@typescript-eslint/consistent-type-imports': ['error'],
 
     // 禁用 '@typescript-eslint/explicit-function-return-type' 校验
-    // Turn off '@typescript-eslint/explicit-function-return-type'
+    // Turn '@typescript-eslint/explicit-function-return-type' off
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
     '@typescript-eslint/explicit-function-return-type': 0,
 
     // 禁用 '@typescript-eslint/explicit-module-boundary-types' 校验
-    // Turn off '@typescript-eslint/explicit-module-boundary-types'
+    // Turn '@typescript-eslint/explicit-module-boundary-types' off
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
     '@typescript-eslint/explicit-module-boundary-types': 0,
 
     // 开启 '@typescript-eslint/func-call-spacing' 校验
-    // Turn on '@typescript-eslint/func-call-spacing'
+    // Turn '@typescript-eslint/func-call-spacing' on
     // https://typescript-eslint.io/rules/func-call-spacing
     'func-call-spacing': 0,
     '@typescript-eslint/func-call-spacing': ['error', 'never'],
 
     // 开启 '@typescript-eslint/keyword-spacing' 校验
-    // Turn on '@typescript-eslint/keyword-spacing'
+    // Turn '@typescript-eslint/keyword-spacing' on
     // https://typescript-eslint.io/rules/keyword-spacing
     'keyword-spacing': 0,
     '@typescript-eslint/keyword-spacing': ['error', { before: true, after: true }],
 
     // 开启 '@typescript-eslint/member-delimiter-style' 警告
-    // Turn on '@typescript-eslint/member-delimiter-style' warning
+    // Turn '@typescript-eslint/member-delimiter-style' on warning
     // https://typescript-eslint.io/rules/member-delimiter-style
     '@typescript-eslint/member-delimiter-style': ['warn', {
       multiline: {
@@ -72,13 +72,13 @@ module.exports = {
     }],
 
     // 开启 '@typescript-eslint/object-curly-spacing' 校验
-    // Turn on '@typescript-eslint/object-curly-spacing'
+    // Turn '@typescript-eslint/object-curly-spacing' on
     // https://typescript-eslint.io/rules/keyword-spacing
     'object-curly-spacing': 0,
     '@typescript-eslint/object-curly-spacing': ['error', 'always', { arraysInObjects: true, objectsInObjects: true }],
 
     // 设置 '@typescript-eslint/naming-convention' 校验
-    // Turn on '@typescript-eslint/naming-convention'
+    // Turn '@typescript-eslint/naming-convention' on
     // https://typescript-eslint.io/rules/naming-convention
     '@typescript-eslint/naming-convention': [
       'error',
@@ -86,127 +86,134 @@ module.exports = {
       { selector: 'variable', format: ['camelCase', 'PascalCase', 'UPPER_CASE'] },
       { selector: 'function', format: ['camelCase', 'PascalCase'] },
       { selector: 'typeLike', format: ['PascalCase'] },
+      { selector: 'interface', format: ['PascalCase'] },
+      { selector: 'typeAlias', format: ['PascalCase'] },
+      { selector: 'class', format: ['PascalCase'] },
+      { selector: 'classProperty', format: ['camelCase', 'PascalCase', 'UPPER_CASE'] },
+      { selector: 'classMethod', format: ['camelCase', 'PascalCase'] },
+      { selector: 'parameter', format: ['camelCase', 'PascalCase'] },
+      { selector: 'parameterProperty', format: ['camelCase', 'PascalCase', 'UPPER_CASE'] },
     ],
 
     // 禁用 '@typescript-eslint/no-var-requires' 校验
-    // Turn off '@typescript-eslint/no-var-requires'
+    // Turn '@typescript-eslint/no-var-requires' off
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-var-requires.md
     '@typescript-eslint/no-var-requires': 0,
 
     // 禁用 '@typescript-eslint/no-explicit-any' 校验
-    // Turn off '@typescript-eslint/no-explicit-any'
+    // Turn '@typescript-eslint/no-explicit-any' off
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-explicit-any.md
     '@typescript-eslint/no-explicit-any': 0,
 
     // 禁用 '@typescript-eslint/no-non-null-assertion' 校验
-    // Turn off '@typescript-eslint/no-non-null-assertion'
+    // Turn '@typescript-eslint/no-non-null-assertion' off
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
     '@typescript-eslint/no-non-null-assertion': 0,
 
     // 禁用 '@typescript-eslint/no-unused-expressions' 校验
-    // Turn off '@typescript-eslint/no-unused-expressions'
+    // Turn '@typescript-eslint/no-unused-expressions' off
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unused-expressions.md
     '@typescript-eslint/no-unused-expressions': 0,
 
 
     // 开启 '@typescript-eslint/no-use-before-define' 校验
-    // Turn on '@typescript-eslint/no-use-before-define'
+    // Turn '@typescript-eslint/no-use-before-define' on
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-use-before-define.md
     '@typescript-eslint/no-use-before-define': ['error'],
 
     // 设置 'quotes' 校验
-    // Turn on 'quotes'
+    // Turn 'quotes' on
     // https://typescript-eslint.io/rules/quotes
     quotes: 0,
     '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
 
     // 禁用 '@typescript-eslint/return-await' 校验
-    // Turn off '@typescript-eslint/return-await'
+    // Turn '@typescript-eslint/return-await' off
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/return-await.md
     '@typescript-eslint/return-await': 0,
 
     // 开启 'block-spacing' 校验
-    // Turn on 'block-spacing'
+    // Turn 'block-spacing' on
     // https://eslint.org/docs/rules/block-spacing
     'block-spacing': ['warn', 'always'],
 
     // 开启 'compat/compat' 校验
-    // Turn on 'compat/compat'
+    // Turn 'compat/compat' on
     // https://eslint.org/docs/rules/array-bracket-spacing
     'compat/compat': 'error',
 
     // 设置 'array-bracket-spacing' 校验
-    // Turn on 'array-bracket-spacing'
+    // Turn 'array-bracket-spacing' on
     // https://eslint.org/docs/rules/array-bracket-spacing
     'array-bracket-spacing': ['error', 'never'],
 
     // 开启 'array-callback-return' 校验
-    // Turn on 'array-callback-return'
+    // Turn 'array-callback-return' on
     // https://eslint.org/docs/rules/array-callback-return
     'array-callback-return': ['error'],
 
     // 禁用 'arrow-parens' 校验, 按需(多个参数)添加箭头函数参数的括号
-    // Turn off 'arrow-parens'
+    // Turn 'arrow-parens' off
     // https://eslint.org/docs/rules/arrow-parens
     'arrow-parens': ['error', 'as-needed'],
 
-    // 开启 'class-methods-use-this' 校验
-    // Turn on 'class-methods-use-this'
+    // 禁用 'class-methods-use-this' 校验
+    // Turn 'class-methods-use-this' off
     // https://eslint.org/docs/rules/class-methods-use-this
-    'class-methods-use-this': ['error'],
+    'class-methods-use-this': 0,
 
     // 禁用 'consistent-return' 校验
-    // Turn off 'consistent-return'
+    // Turn 'consistent-return' off
     // https://eslint.org/docs/rules/consistent-return
     'consistent-return': 0,
 
     // 禁用 'global-require' 校验 允许在非全局范围使用 require
-    // Turn off 'global-require'
+    // Turn 'global-require' off
     // https://eslint.org/docs/rules/global-require
     'global-require': 0,
 
     // 禁用 'import/no-cycle' 校验
-    // Turn off 'import/no-cycle'
+    // Turn 'import/no-cycle' off
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-cycle.md
     'import/no-cycle': 0,
 
     // 禁用 'import/named' 校验
-    // Turn off 'import/named'
+    // Turn 'import/named' off
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/named.md
     'import/named': 0,
 
     // 设置 'import/no-unresolved' 校验
-    // Turn on 'import/no-unresolved'
+    // Turn 'import/no-unresolved' on
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
     'import/no-unresolved': ['error', { commonjs: true }],
 
     // 禁用 'import/prefer-default-export' 校验
-    // Turn off 'import/prefer-default-export'
+    // Turn 'import/prefer-default-export' off
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
     'import/prefer-default-export': 0,
 
     // 禁用 'import/extensions' 校验 允许倒入模块时不写扩展名
-    // Turn off 'import/extensions'
+    // Turn 'import/extensions' off
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
     'import/extensions': 0,
 
     // 禁用 'import/newline-after-import' 校验 import/require 后可以不留空行
-    // Turn off 'import/newline-after-import'
+    // Turn 'import/newline-after-import' off
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
     'import/newline-after-import': 0,
 
     // 设置 '@typescript-eslint/no-non-null-assertion' 校验
-    // Turn on 'import/no-extraneous-dependencies'
+    // Turn 'import/no-extraneous-dependencies' on
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
 
     // 开启 'lines-between-class-members' 校验 要求多行类成员后留空行
-    // Turn on 'lines-between-class-members'
+    // Turn 'lines-between-class-members' on
     // https://eslint.org/docs/rules/lines-between-class-members
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
     // 禁用 'max-classes-per-file' 校验, 允许在一个文件内定义多个类
-    // Turn on 'max-classes-per-file'
+    // Turn 'max-classes-per-file' on
     // https://eslint.org/docs/rules/max-classes-per-file
     'max-classes-per-file': 0,
 
@@ -221,32 +228,32 @@ module.exports = {
     'no-bitwise': 0,
 
     // 禁用 'no-continue' 校验, 允许使用 continue 关键字
-    // Turn off 'no-continue'
+    // Turn 'no-continue' off
     // https://eslint.org/docs/rules/no-continue
     'no-continue': 0,
 
     // 禁用 'no-multi-assign' 校验, 允许连续赋值
-    // Turn off 'no-multi-assign'
+    // Turn 'no-multi-assign' off
     // https://eslint.org/docs/rules/no-multi-assign
     'no-multi-assign': 0,
 
     // 设置 'no-multiple-empty-lines' 校验
-    // Turn on 'no-multiple-empty-lines'
+    // Turn 'no-multiple-empty-lines' on
     // https://eslint.org/docs/rules/no-multiple-empty-lines
     'no-multiple-empty-lines': ['error', { max: 2, maxBOF: 1 }],
 
     // 禁用 'no-nested-ternary' 校验, 允许连续的三元判断。
-    // Turn off 'no-multiple-empty-lines'
+    // Turn 'no-multiple-empty-lines' off
     // https://eslint.org/docs/rules/no-nested-ternary
     'no-nested-ternary': 0,
 
     // 设置 'no-param-reassign' 校验, 禁止 prop 覆盖
-    // Turn on 'no-param-reassign'
+    // Turn 'no-param-reassign' on
     // https://eslint.org/docs/rules/no-param-reassign
     'no-param-reassign': ['error', { props: true }],
 
     // 禁止 "no-restricted-syntax" 校验
-    // Turn off 'no-restricted-syntax'
+    // Turn 'no-restricted-syntax' off
     // https://eslint.org/docs/rules/no-restricted-syntax
     'no-restricted-syntax': 0,
 
@@ -256,47 +263,47 @@ module.exports = {
     'no-trailing-spaces': ['error'],
 
     // 禁用 'no-plusplus' 校验 允许使用 ++ -- 操作符
-    // Turn off 'no-plusplus'
+    // Turn 'no-plusplus' off
     // https://eslint.org/docs/rules/no-plusplus
     'no-plusplus': 0,
 
     // 禁用 'object-curly-newline' 校验，对象字面量内是否换行根据上下文自行决定.
-    // Turn off 'object-curly-newline'
+    // Turn 'object-curly-newline' off
     // https://eslint.org/docs/rules/no-plusplus
     'object-curly-newline': 0,
 
     // 启用 'one-var' 校验，要求每个 let/const/var 关键字只能定义一个变量.
-    // Turn on 'one-var'
+    // Turn 'one-var' on
     // https://eslint.org/docs/rules/one-var
     'one-var': ['error', 'never'],
 
     // 开启 'object-shorthand' 校验，
-    // Turn on 'object-shorthand'
+    // Turn 'object-shorthand' on
     // https://eslint.org/docs/rules/object-shorthand
     'object-shorthand': ['error', 'always'],
 
     // 禁用 'padded-blocks' 校验, 允许代码块首行留空。
-    // Turn off 'padded-blocks'
+    // Turn 'padded-blocks' off
     // https://eslint.org/docs/rules/no-plusplus
     'padded-blocks': 0,
 
     // 开启 'prefer-const' 校验
-    // Turn off 'prefer-const'
+    // Turn 'prefer-const' off
     // https://eslint.org/docs/rules/prefer-const
     'prefer-const': ['error'],
 
     // 开启 'prefer-template' 校验
-    // Turn off 'prefer-template'
+    // Turn 'prefer-template' off
     // https://eslint.org/docs/rules/prefer-template
     'prefer-template': ['error'],
 
     // 设置 'quote-props' 校验
-    // Turn on 'quote-props'
+    // Turn 'quote-props' on
     // https://eslint.org/docs/rules/quote-props
     'quote-props': ['error', 'as-needed'],
 
     // 设置 'quote-props' 校验
-    // Turn on 'quote-props'
+    // Turn 'quote-props' on
     // https://eslint.org/docs/rules/quote-props
     'space-in-parens': ['error', 'never'],
 
@@ -316,34 +323,39 @@ module.exports = {
     'unicorn/escape-case': 'error',
 
     // 关闭 'unicorn/prefer-top-level-await' 校验
-    // Turn off 'unicorn/prefer-top-level-await'
+    // Turn 'unicorn/prefer-top-level-await' off
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
     'unicorn/filename-case': ['error', { cases: { camelCase: true, pascalCase: true } }],
 
     // 关闭 'unicorn/no-document-cookie' 校验
-    // Turn off 'unicorn/no-document-cookie'
+    // Turn 'unicorn/no-document-cookie' off
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-document-cookie.md
     'unicorn/no-document-cookie': 0,
 
     // 关闭 'unicorn/no-document-cookie' 校验
-    // Turn off 'unicorn/no-empty-file'
+    // Turn 'unicorn/no-empty-file' off
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-empty-file.md
     'unicorn/no-empty-file': 0,
 
     // 关闭 'unicorn/no-null' 校验
-    // Turn off 'unicorn/no-null'
+    // Turn 'unicorn/no-null' off
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
     'unicorn/no-null': 0,
 
     // 关闭 'unicorn/expiring-todo-comments' 校验
-    // Turn off 'unicorn/expiring-todo-comments'
+    // Turn 'unicorn/expiring-todo-comments' off
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
     'unicorn/expiring-todo-comments': 0,
 
     // 关闭 'unicorn/prefer-top-level-await' 校验
-    // Turn off 'unicorn/prefer-top-level-await'
+    // Turn 'unicorn/prefer-top-level-await' off
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
     'unicorn/prefer-top-level-await': 0,
+
+    // 关闭 'unicorn/prefer-switch' 校验
+    // Turn 'unicorn/prefer-switch' off
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
+    'unicorn/prefer-switch': 0,
 
     'unicorn/consistent-destructuring': 0,
     'unicorn/consistent-function-scoping': 0,
@@ -358,7 +370,7 @@ module.exports = {
     'unicorn/prevent-abbreviations': 0,
 
     // 设置 'no-unused-vars' 校验
-    // Turn on 'no-unused-vars'
+    // Turn 'no-unused-vars' on
     // https://github.com/sweepline/eslint-plugin-unused-imports
     'no-unused-vars': 0,
     '@typescript-eslint/no-unused-vars': 0,
