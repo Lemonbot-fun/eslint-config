@@ -134,6 +134,132 @@
     "source": "<template>\n  <div size=\"1\" ref=\"root\"></div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue';\n\nexport default defineComponent({\n  name: 'Bad',\n  setup() {\n    const foo = \"adsf\";\n    console.log(foo);\n    const bar = \"adsf\";\n  }\n});\n</script>\n",
     "usedDeprecatedRules": [
       {
+        "ruleId": "@typescript-eslint/comma-dangle",
+        "replacedBy": [
+          "@stylistic/ts/comma-dangle"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/func-call-spacing",
+        "replacedBy": [
+          "@stylistic/ts/func-call-spacing"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/keyword-spacing",
+        "replacedBy": [
+          "@stylistic/ts/keyword-spacing"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/member-delimiter-style",
+        "replacedBy": [
+          "@stylistic/ts/member-delimiter-style"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/object-curly-spacing",
+        "replacedBy": [
+          "@stylistic/ts/object-curly-spacing"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/quotes",
+        "replacedBy": [
+          "@stylistic/ts/quotes"
+        ]
+      },
+      {
+        "ruleId": "block-spacing",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "array-bracket-spacing",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "arrow-parens",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "lines-between-class-members",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "max-len",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-multiple-empty-lines",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-trailing-spaces",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "quote-props",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "space-in-parens",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "@typescript-eslint/brace-style",
+        "replacedBy": [
+          "@stylistic/ts/brace-style"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/comma-spacing",
+        "replacedBy": [
+          "@stylistic/ts/comma-spacing"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/indent",
+        "replacedBy": [
+          "@stylistic/ts/indent"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/lines-between-class-members",
+        "replacedBy": [
+          "@stylistic/ts/lines-between-class-members"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/no-extra-semi",
+        "replacedBy": [
+          "@stylistic/ts/no-extra-semi"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/space-before-blocks",
+        "replacedBy": [
+          "@stylistic/ts/space-before-blocks"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/semi",
+        "replacedBy": [
+          "@stylistic/ts/semi"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/space-before-function-paren",
+        "replacedBy": [
+          "@stylistic/ts/space-before-function-paren"
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/space-infix-ops",
+        "replacedBy": [
+          "@stylistic/ts/space-infix-ops"
+        ]
+      },
+      {
         "ruleId": "vue/component-tags-order",
         "replacedBy": [
           "block-order"
