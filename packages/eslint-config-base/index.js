@@ -342,6 +342,11 @@ module.exports = {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
     'unicorn/no-null': 0,
 
+    // 关闭 'unicorn/no-useless-switch-case' 校验
+    // Turn 'unicorn/no-useless-switch-case' off
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-switch-case.md
+    'unicorn/no-useless-switch-case': 0,
+
     // 关闭 'unicorn/expiring-todo-comments' 校验
     // Turn 'unicorn/expiring-todo-comments' off
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
