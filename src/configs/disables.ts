@@ -23,8 +23,8 @@ export async function disables(): Promise<TypedFlatConfigItem[]> {
       files: ['**/bin/**/*', `**/bin.${GLOB_SRC_EXT}`],
       name: 'lemonbot/disables/bin',
       rules: {
-        'lemonbot/no-import-dist': 'off',
-        'lemonbot/no-import-node-modules-by-path': 'off',
+        'antfu/no-import-dist': 'off',
+        'antfu/no-import-node-modules-by-path': 'off',
       },
     },
     {
