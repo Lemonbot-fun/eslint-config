@@ -30,7 +30,6 @@
   ],
   "scripts": {
     "build": "nr typegen && tsup --format esm,cjs --clean --dts",
-    "publish": "pnpm run test && tsx scripts/publish.js",
     "test": "vitest",
     "typegen": "tsx scripts/typegen.ts",
     "dev": "npx @eslint/config-inspector --config eslint.config.ts",
