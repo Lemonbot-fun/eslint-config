@@ -112,9 +112,14 @@ export async function vue(
             },
 
         'node/prefer-global/process': 'off',
-        'vue/block-order': ['error', {
-          order: ['script', 'template', 'style'],
-        }],
+        'vue/block-order': ['error', { order: [
+          'template',
+          'i18n',
+          'script:not([setup])',
+          'script[setup]',
+          'style[scoped]',
+          'style:not([scoped])',
+        ] }],
 
         'vue/component-name-in-template-casing': ['error', 'PascalCase'],
         'vue/component-options-name-casing': ['error', 'PascalCase'],

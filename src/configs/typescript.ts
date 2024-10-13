@@ -152,6 +152,11 @@ export async function typescript(
         'ts/no-non-null-assertion': 'off',
         'ts/no-redeclare': 'error',
         'ts/no-require-imports': 'error',
+        'ts/no-unused-expressions': ['error', {
+          allowShortCircuit: true,
+          allowTaggedTemplates: true,
+          allowTernary: true,
+        }],
         'ts/no-unused-vars': 'off',
         'ts/no-use-before-define': ['error', { classes: false, functions: false, variables: true }],
         'ts/no-useless-constructor': 'off',
